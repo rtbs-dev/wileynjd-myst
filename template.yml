@@ -1,0 +1,149 @@
+jtex: v1
+title: WileyNJD
+description: Unofficial MystMD template for typesetting WileyNJD papers with LaTeX
+version: 1.0.0
+license: TODO
+source: >-
+  https://authorservices.wiley.com/author-resources/Journal-Authors/Prepare/new-journal-design.html
+thumbnail: ./thumbnail.png
+authors:
+  - name: Wiley, LaTeX Development Team (India)
+    website: https://authorservices.wiley.com/home.html
+    affiliations:
+      - Wiley Journals
+tags:
+  - paper
+parts:
+  - id: abstract
+    required: true
+    description: >
+      A good abstract will begin with a short description of the problem being
+      addressed, briefly describe the new data or analyses, then briefly states
+      the main conclusion(s) and how they are supported and uncertainties.
+  - id: bibliography
+  - id: author_contributions
+  - id: acknowledgements
+  - id: finiancial_disclosure
+  - id: conflict_of_interest
+  - id: supporting_info
+doc:
+  - id: title
+    required: true
+  - id: keywords
+  - id: bibliography
+options:
+  - type: string
+    id: article_type
+    required: true
+    description: Type of article, e.g. "Letters"
+  - type: choice
+    id: font
+    required: true
+    choices:
+      - STIX
+      - Times
+      - Garamond
+      - Utopia
+      - Century
+      - Minion
+      - LATO
+      - Helvetica
+      - Myriad
+      - Arial
+      - Univers
+      - Courier
+  - type: choice
+    id: reference_style
+    required: true
+    choices:
+      - WCMS
+      - AMS
+      - AMA
+      - APA
+      - VANCOUVER
+      - MPS
+      - APS
+      - CHICAGO
+      - HARVARD
+      - MLA
+  - type: choice
+    id: columns
+    required: true
+    choices:
+      - 1COL
+      - 2COL
+files:
+  - template.tex
+  - WileyNJD-v5.cls
+  - NJDnatbib.sty
+  - NJDapacite.sty
+  - appendix.sty
+  - amssymb.sty
+  - lettersp.sty
+  - wileyNJD-AMA.bst
+  - mla.sty
+  - natbib.sty
+  - algorithm.sty
+  - algorithmicx.sty
+packages:
+  - NJDapacite
+  - NJDnatbib
+  - algorithm
+  - algorithmicx
+  - algpseudocode
+  - alltt
+  - amsbsy
+  - amsfonts
+  - amsmath
+  - amssymb
+  - amsthm
+  - babel
+  - boites
+  - bookmark
+  - booktabs
+  - calc
+  - caption
+  - changepage
+  - citeref
+  - crop
+  - cuted
+  - dblfloatfix
+  - dcolumn
+  - ebgaramond
+  - enumerate
+  - etex
+  - etoolbox
+  - float
+  - floatpag
+  - fontenc
+  - fontspec
+  - footmisc
+  - graphicx
+  - hyperref
+  - ifluatex
+  - ifpdf
+  - ifthen
+  - ifxetex
+  - index
+  - lettersp
+  - listings
+  - mathastext
+  - microtype
+  - multicol
+  - multirow
+  - natbib
+  - rotating
+  - setspace
+  - showframe
+  - soul
+  - subfig
+  - tabularx
+  - times
+  - twoopt
+  - ulem
+  - url
+  - utopia
+  - varwidth
+  - wrapfig
+  - xcolor
+myst: v1

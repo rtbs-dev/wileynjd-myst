@@ -1,0 +1,75 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Copy in your template with your latex document!
+\documentclass[[-options.reference_style-],[-options.font-][-options.columns-]]{WileyNJD-v5}
+
+\articletype{[-options.article_type-]}%
+
+
+\received{Date Month Year}
+\revised{Date Month Year}
+\accepted{Date Month Year}
+\journal{Journal}
+\volume{00}
+\copyyear{2023}
+\startpage{1}
+
+\raggedbottom
+
+% You should have an imports section
+[- IMPORTS -]
+
+\title{[-doc.title-]}
+
+[# if parts.abstract #]
+\abstract[Abstract]{
+	[-parts.abstract-]
+}
+[# endif #]
+
+\begin{document}
+
+\maketitle
+
+\renewcommand\thefootnote{}
+\footnotetext{\textbf{Abbreviations:} }
+
+\renewcommand\thefootnote{\fnsymbol{footnote}}
+\setcounter{footnote}{1}
+
+[-CONTENT-]
+
+
+
+%\backmatter
+[# if parts.author_contributions #]
+\bmsection*{Author contributions}
+[- parts.author_contributions -]
+[# endif #]
+
+[# if parts.acknowledgements #]
+\bmsection*{Acknowledgements}
+[- parts.acknowledgements -]
+[# endif #]
+
+[# if parts.finiancial_disclosure #]
+\bmsection*{Financial disclosure}
+[- parts.finiancial_disclosure -]
+[# endif #]
+
+[# if parts.conflict_of_interest #]
+\bmsection*{Conflict of interest}
+[- parts.conflict_of_interest -]
+[# endif #]
+
+[# if parts.bibliography #]
+\bibliography{[- parts.bibliography | join(", ") -]}
+[# endif #]
+
+[# if parts.supporting_info #]
+\bmsection*{Supporting information}
+[- parts.supporting_info -]
+[# endif #]
+
+
+
+\end{document}
