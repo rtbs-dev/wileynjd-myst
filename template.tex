@@ -61,9 +61,9 @@
 [- parts.conflict_of_interest -]
 [# endif #]
 
-[# if parts.bibliography #]
-\bibliography{[- parts.bibliography | join(", ") -]}
-[# endif #]
+[#- if doc.bibliography #]
+\bibliography{[- doc.bibliography | join(", ") -]}
+[# endif -#]
 
 [# if parts.supporting_info #]
 \bmsection*{Supporting information}
