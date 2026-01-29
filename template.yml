@@ -2,7 +2,7 @@ jtex: v1
 title: WileyNJD
 description: Unofficial MystMD template for typesetting WileyNJD papers with LaTeX
 version: 1.0.0
-license: TODO
+license: LPPL-1.3a
 source: >-
   https://authorservices.wiley.com/author-resources/Journal-Authors/Prepare/new-journal-design.html
 thumbnail: ./thumbnail.png
