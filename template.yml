@@ -5,7 +5,7 @@ version: 1.0.0
 license: TODO
 source: >-
   https://authorservices.wiley.com/author-resources/Journal-Authors/Prepare/new-journal-design.html
-# thumbnail: ./thumbnail.png
+thumbnail: ./thumbnail.png
 authors:
   - name: Wiley, LaTeX Development Team (India)
     website: https://authorservices.wiley.com/home.html
