@@ -84,6 +84,8 @@ files:
   - natbib.sty
   - algorithm.sty
   - algorithmicx.sty
+  - mathastext.sty
+  - boites.sty
 packages:
   - NJDapacite
   - NJDnatbib

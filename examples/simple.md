@@ -18,7 +18,7 @@ authors:
       - aff1
       - aff3
     #email: iiiauthor@gmail.com
-
+bibliography: eg.bib
 affiliations:
   - id: aff1
     name: 'Affiliation 1,  '
@@ -53,10 +53,8 @@ keywords:
   - Keyword2
   - Keyword3
   - Keyword4
-bibliography:
-  - sn-bibliography.bib
 export:
-  - format: tex
+  - format: tex+pdf
     template: ../.
     article_type: Letters
     font: Times
@@ -70,7 +68,7 @@ export:
 
 Lorem markdownum atque loquendi est; bos Leucosiamque, et non fatebar lecti.
 Indicium nam recusem gratia Cadmus praestiteris Atque formamque; Romuleae
-pampineae rite non.
+pampineae rite non. @bib1
 
 +++
 
@@ -78,9 +76,11 @@ pampineae rite non.
 
 ## Corpore aquis
 
+
 Lorem markdownum atque loquendi est; bos Leucosiamque, et non fatebar lecti.
 Indicium nam recusem gratia Cadmus praestiteris Atque formamque; Romuleae
 pampineae rite non [](https://doi.org/10.1007/BF02650179).
+[@bib2]
 
 ## Ibis hoc ultra tulit Mygdoniusque caeli concutiens
 
@@ -88,13 +88,13 @@ Ora hac quoque, in _ipsos iura nec_ egreditur Mygdoniusque [pudet sui
 relictae](http://anilibus.net/) superata Festa animorum cum animos variat.
 Animum iuvet ut montes undamque superbia durataeque haec comitesque hunc! Niger
 ait postquam [Echidnaeae fovebam](https://www.google.com), sed vimque,
-quoque montibus verbis vertit paulatim, primos illud: sorte. _Ossibus_ voce
+quoque montibus verbis vertit paulatim, primos illud: sorte.[@bib3] _Ossibus_ voce
 animas armis moenia, fuit Claros; vidit in concretam spem iam labitur ex sede
 mihi **solum sudore**. Terga progenies collo spretarumque: poscor.
 
 Ille quamquam quasi Tiberinus templum adcommodat mihi, pro Cynthia fratres
 tectis nequiquam teneri **Apolline fores Cnosiaci** talibus funere pallidaque.
-Tantum _inde osque_ finxit egesto.
+Tantum _inde osque_ finxit egesto @bib4.
 
 ## Gladio famulumque manus resupinus illius
 
