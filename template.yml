@@ -110,6 +110,7 @@ packages:
   - cuted
   - dblfloatfix
   - dcolumn
+  - decimalcomma
   - ebgaramond
   - enumerate
   - etex
@@ -133,6 +134,7 @@ packages:
   - multicol
   - multirow
   - natbib
+  - ncccomma
   - rotating
   - setspace
   - showframe
